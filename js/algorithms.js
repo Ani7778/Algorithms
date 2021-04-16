@@ -31,7 +31,7 @@ for (let i = 0; i < arrOfTriangArrays.length; i++) {
 	console.log(current[0] + current[1] + current[2]);
 }
 
-const primeNumber = (number)=> {
+const primeNumber = number=> {
 	let isPrime = true;
 
 	if (number === 1) {
@@ -54,7 +54,7 @@ const primeNumber = (number)=> {
 	}
 }
 
-const sumUp = (n)=> {
+const sumUp = n=> {
 	let result = 0;
 	for (let i = 0; i <= n; i++) {
 		result += i;
@@ -65,7 +65,7 @@ const sumUp = (n)=> {
 
 const arr = [1, 1, 2, 2, 3, 4, 4];
 
-const removeDupes = (arr) => {
+const removeDupes = arr => {
   	let result = [];
   	let previous = arr[0];
   	result[0] = previous;
@@ -81,3 +81,16 @@ const removeDupes = (arr) => {
   
   	return result;
 }
+
+const multByAdd = (a, b)=> {
+	let c = 0;
+	if (a > 0 && b > 0) {
+		for (let i = 0; i < b; i++) {
+		c += a;
+	}
+	return c;
+	} else {
+		console.log("One of numbers is negative");
+	}
+}
+
