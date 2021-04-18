@@ -114,4 +114,20 @@ const fact2 = n => {
 }
 
 
+const countWaysOfClimbingStairs = n => {
+	if (n < 0) {
+		return 0;
+	}
+
+	if (n === 0) {
+		return 1;
+	}
+
+	return countWaysOfClimbingStairs(n - 1) 
+		+ countWaysOfClimbingStairs(n - 2)
+		+ countWaysOfClimbingStairs(n - 3);
+}
+
+
+
 
